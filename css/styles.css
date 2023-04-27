@@ -18,6 +18,8 @@ html {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 .container {
   width: 1158px;
@@ -36,6 +38,30 @@ body {
   color: var(--text-color);
   background-color: var(--main-bacground-color);
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
 /* Header */
 .header-container {
   display: flex;
@@ -44,7 +70,10 @@ body {
 .header {
   background-color: #ffffff;
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
+
 /* Header LOGO */
 .studioword {
   font-family: "Raleway", sans-serif;
@@ -136,8 +165,14 @@ body {
 /* Hero section */
 .hero {
   background: #2e2f42;
-  background: rgba(46, 47, 66, 0.7);
-  background-image: url(../images/img-background/people-office\ 1.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/img-background/people-office\ 1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 600px;
   margin: 0;
   padding-top: 188px;
@@ -302,6 +337,23 @@ body {
 .card-content {
   padding: 32px 16px;
 }
+/* Customers */
+.customers {
+  margin: 120px 156px;
+}
+.customers-list {
+  margin: 0;
+  display: flex;
+  padding: 0;
+}
+.customers-item {
+  border: 1px solid #8e8f99;
+  width: 168px;
+  height: 88px;
+}
+.customers-list .customers-item:not(:last-child) {
+  margin-right: 24px;
+}
 /* Footer */
 .footer {
   background: var(--title-color);
@@ -387,6 +439,8 @@ body {
   background: #404bbf;
   color: #ffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 /* Portfolio-links-section */
 .portfolio-list .link {
@@ -410,6 +464,10 @@ body {
 }
 .portfolio-card:nth-last-child(-n + 3) {
   margin-bottom: 0px;
+}
+.portfolio-card :hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .portfolio-card-content {
   padding: 32px 16px;
