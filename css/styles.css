@@ -136,11 +136,17 @@ body {
 /* Hero section */
 .hero {
   background: #2e2f42;
+  background: rgba(46, 47, 66, 0.7);
+  background-image: url(../images/img-background/people-office\ 1.jpg);
   height: 600px;
   margin: 0;
   padding-top: 188px;
   padding-bottom: 188px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .hero-title {
   font-family: var(--main-text);
   font-style: normal;
