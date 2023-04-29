@@ -391,7 +391,7 @@ p {
   gap: 24px;
 }
 .customers-container .title {
-  line-height: 1.11;
+  line-height: 1.1;
 }
 .customers-item {
   width: 168px;
@@ -445,7 +445,9 @@ p {
   display: flex;
   gap: 16px;
 }
-
+.footer-social-icon {
+  fill: #f4f4fd;
+}
 .footer-part1 {
   margin-right: 120px;
 }
