@@ -329,7 +329,9 @@ p {
   justify-content: center;
   border-radius: 50%;
 }
-
+.social-icon {
+  fill: var(--button-bacground-collor);
+}
 .social-media-link:hover {
   background: var(--hover-color);
 }
@@ -419,6 +421,9 @@ p {
 .footer-socials {
   display: flex;
   gap: 16px;
+}
+.footer-social-icon {
+  fill: var(--button-bacground-collor);
 }
 .footer-part1 {
   margin-right: 120px;
