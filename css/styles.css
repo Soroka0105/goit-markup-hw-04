@@ -171,9 +171,10 @@ p {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/img-background/people-office\ 1.jpg);
+    url(../images/img-background/people-office1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 600px;
   margin: 0;
   padding-top: 188px;
@@ -320,18 +321,27 @@ p {
   padding: 0;
   margin-top: 8px;
 }
-.social-media-link {
-  background: var(--button-text-collor);
+.socials-item {
   width: 40px;
   height: 40px;
+}
+.socials-link {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
   border-radius: 50%;
 }
-
-.social-media-link:hover {
-  background: var(--hover-color);
+.socials-link:hover {
+  background-color: #404bbf;
+}
+.socials-link:focus {
+  background-color: #404bbf;
+}
+.social-icon {
+  fill: #f4f4fd;
 }
 
 .team-member {
@@ -368,11 +378,12 @@ p {
   margin: 0px;
 }
 .card-content {
-  padding: 32px 16px;
+  padding: 32px 0;
 }
 /* Customers */
 .customers {
-  margin: 120px 156px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .customers-list {
   margin: 0;
@@ -381,24 +392,35 @@ p {
   gap: 24px;
 }
 .customers-item {
-  border: 1px solid #8e8f99;
   width: 168px;
   height: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
-  fill: #8e8f99;
 }
+.customers-link {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #8e8f99;
+}
+
 .customer-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
-.customers-item:hover {
+.customers-link:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-color: var(--button-text-collor);
+  border-color: #404bbf;
+  color: #404bbf;
 }
-.customers-item:focus {
+.customers-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-color: var(--button-text-collor);
+  border-color: #404bbf;
+  color: #404bbf;
 }
 .customers-item:focus .customer-icon {
   fill: var(--hover-color);
@@ -415,6 +437,7 @@ p {
 }
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 .footer-socials {
   display: flex;
@@ -424,21 +447,31 @@ p {
 .footer-part1 {
   margin-right: 120px;
 }
-.footer-social-media-link {
-  background: var(--button-text-collor);
+.footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-social-link:hover {
+  background-color: #31d0aa;
+}
+.footer-social-link:focus {
+  background-color: #31d0aa;
+}
+.footer-social-item {
   width: 40px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.footer-social-media-link:hover {
-  background: #31d0aa;
+.footer-social-text {
+  font-weight: 500;
+  color: #ffffff;
+  margin-bottom: 16px;
 }
-.footer-social-media-link:focus {
-  background: #31d0aa;
-}
+
 .footer-logo-link {
   text-decoration: none;
   font-family: "Raleway", sans-serif;
@@ -523,6 +556,7 @@ p {
 .portfolio-list .link {
   text-decoration: none;
   list-style: none;
+  display: block;
 }
 .portfolio-list {
   margin-bottom: 0px;
@@ -543,6 +577,10 @@ p {
   margin-bottom: 0px;
 }
 .portfolio-card :hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+.portfolio-card :focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
