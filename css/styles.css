@@ -167,7 +167,6 @@ p {
 .hero {
   background: #2e2f42;
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
@@ -391,6 +390,9 @@ p {
   padding: 0;
   gap: 24px;
 }
+.customers-container .title {
+  line-height: 1.11;
+}
 .customers-item {
   width: 168px;
   height: 88px;
@@ -470,6 +472,8 @@ p {
   font-weight: 500;
   color: #ffffff;
   margin-bottom: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
 }
 
 .footer-logo-link {
